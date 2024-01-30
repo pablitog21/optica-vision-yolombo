@@ -3,23 +3,13 @@ import React from 'react'
 const Footer = () => {
     return (
         <footer className="bg-gray-800 text-white p-4 text-center fixed bottom-0 w-full z-50">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-                <div>
-                    <a href="/enlaces-de-interes">Enlaces de Interés</a>
-                    <p>Información aleatoria 1</p>
-                    <p>Información aleatoria 2</p>
-                </div>
-                <div>
-                    <a href="/terminos-y-condiciones">Términos y Condiciones</a>
-                    <p>Información aleatoria 3</p>
-                    <p>Información aleatoria 4</p>
-                </div>
-                <div>
+            <div className="mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="flex flex-col items-center mb-4">
                     <a href="/contactanos">Contáctanos</a>
-                    <p>Información aleatoria 5</p>
-                    <p>Información aleatoria 6</p>
+                    <p>Telefono 302 308 6093</p>
+                    <p>example@gmail.com</p>
                 </div>
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center mb-4">
                     <a href="/siguenos">Síguenos en</a>
                     <div className="flex mt-4">
                         <a href="https://api.whatsapp.com/send?phone=573023086093" target="_blank" rel="noopener noreferrer" className="mr-2">
