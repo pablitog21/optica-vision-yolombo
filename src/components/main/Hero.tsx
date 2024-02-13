@@ -6,6 +6,60 @@ const Hero = () => {
       <img src="assets/images/name-vision-y.png" alt="Óptica Vision Yolombo"
         className='w-[372px] h-[140px] items-center'
       />
+      <img src="assets/images/name-vision-y.png" alt="Óptica Vision Yolombo"
+        className='w-[372px] h-[140px] items-center'
+      />
+      <img src="assets/images/name-vision-y.png" alt="Óptica Vision Yolombo"
+        className='w-[372px] h-[140px] items-center'
+      />
+      <img src="assets/images/name-vision-y.png" alt="Óptica Vision Yolombo"
+        className='w-[372px] h-[140px] items-center'
+      />
+      <img src="assets/images/name-vision-y.png" alt="Óptica Vision Yolombo"
+        className='w-[372px] h-[140px] items-center'
+      />
+      <img src="assets/images/name-vision-y.png" alt="Óptica Vision Yolombo"
+        className='w-[372px] h-[140px] items-center'
+      />
+      <img src="assets/images/name-vision-y.png" alt="Óptica Vision Yolombo"
+        className='w-[372px] h-[140px] items-center'
+      />
+
+<img src="assets/images/name-vision-y.png" alt="Óptica Vision Yolombo"
+        className='w-[372px] h-[140px] items-center'
+      />
+      <img src="assets/images/name-vision-y.png" alt="Óptica Vision Yolombo"
+        className='w-[372px] h-[140px] items-center'
+      />
+
+
+      <img src="assets/images/name-vision-y.png" alt="Óptica Vision Yolombo"
+        className='w-[372px] h-[140px] items-center'
+      />
+      <img src="assets/images/name-vision-y.png" alt="Óptica Vision Yolombo"
+        className='w-[372px] h-[140px] items-center'
+      />
+      <img src="assets/images/name-vision-y.png" alt="Óptica Vision Yolombo"
+        className='w-[372px] h-[140px] items-center'
+      />
+      <img src="assets/images/name-vision-y.png" alt="Óptica Vision Yolombo"
+        className='w-[372px] h-[140px] items-center'
+      />
+      <img src="assets/images/name-vision-y.png" alt="Óptica Vision Yolombo"
+        className='w-[372px] h-[140px] items-center'
+      />
+      <img src="assets/images/name-vision-y.png" alt="Óptica Vision Yolombo"
+        className='w-[372px] h-[140px] items-center'
+      />
+      <img src="assets/images/name-vision-y.png" alt="Óptica Vision Yolombo"
+        className='w-[372px] h-[140px] items-center'
+      />
+      <img src="assets/images/name-vision-y.png" alt="Óptica Vision Yolombo"
+        className='w-[372px] h-[140px] items-center'
+      />
+      <img src="assets/images/name-vision-y.png" alt="Óptica Vision Yolombo"
+        className='w-[372px] h-[140px] items-center'
+      />
       In progress
     </div>
   )

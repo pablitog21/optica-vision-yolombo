@@ -1,27 +1,41 @@
+'use client'
+
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 const Navbar = () => {
+    const [prevScrollPos, setPrevScrollPos] = useState(0);
+    const [visible, setVisible] = useState(true);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollPos = window.pageYOffset;
+            setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
+            setPrevScrollPos(currentScrollPos);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, [prevScrollPos, visible]);
+
     return (
-        <div className='w-full h-[65px] fixed top-0 shadow-lg shadow-[#03001417]/50  bg-[#03001417] backdrop-blur-md z-50 px-10'>
-            <div className='w-full h-full flex flex-row items-center justify-between m-auto px-[10px]'>
+        <div className={`w-full h-[55px] fixed top-0 shadow-lg shadow-[#03001417]/50 bg-[#03001417] backdrop-blur-md z-50 px-6 md:px-10 transition-all duration-300 ${visible ? '' : '-translate-y-full'}`}>
+            <div className='w-full h-full flex flex-row items-center justify-between m-auto'>
                 <a href="#about" className='h-auto w-auto flex flex-row items-center'>
                     <Image
                         src="/assets/images/name-vision-y.png"
                         alt="logo"
-                        width={150}
-                        height={100}
+                        width={120}
+                        height={80}
                         className='cursor-pointer hover:animate-slowspin'
                     />
                 </a>
-                <div className='w-[500px] h-full flex flex-row items-center justify-between md:mr-80'>
-                    <div className='flex items-center justify-between w-full h-auto bg-[#3880a7] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-50'>
-                        <a href="#about-me" className='cursor-pointer transition duration-300 hover:text-white hover:bg-blue-500 px-2 py-1 rounded-full'>Inicio</a>
-                        <a href="#servicios" className='cursor-pointer transition duration-300 hover:text-white hover:bg-blue-500 px-2 py-1 rounded-full'>Servicios</a>
-                        <a href="#promociones" className='cursor-pointer transition duration-300 hover:text-white hover:bg-blue-500 px-2 py-1 rounded-full'>Promociones</a>
-                    </div>
+                <div className='hidden md:flex items-center space-x-4 text-black'>
+                    <a href="#about-me" className='text-black hover:text-gray-400 font-semibold transition duration-300'>About</a>
+                    <a href="#services" className='text-black hover:text-gray-400 font-semibold transition duration-300'>Services</a>
+                    <a href="#contact" className='text-black hover:text-gray-400 font-semibold transition duration-300'>Contact</a>
                 </div>
-
             </div>
         </div>
     )
