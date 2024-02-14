@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react';
+import React, { useState } from 'react';
 
 const BotonWhatsapp = () => {
 
@@ -17,8 +17,9 @@ const BotonWhatsapp = () => {
         <img
             src="/assets/icons/whatsapp-icon.png"
             alt="WhatsApp"
-            className="fixed bottom-5 right-5 w-10 h-10 cursor-pointer"
+            className="fixed bottom-5 right-5 w-12 h-12 cursor-pointer animate-pulse"
             onClick={handleClick}
+            style={{ animationDuration: '2s' }} // Personalizar la duración de la animación
         />
     );
 };
