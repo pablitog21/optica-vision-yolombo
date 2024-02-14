@@ -27,17 +27,17 @@ const Card = () => {
             className="border border-gray-300 p-4 rounded-lg bg-gray-100 hover:transform hover:scale-105 cursor-pointer"
             onClick={() => openImage(card.src)}
           >
-            {/* <div className="text-center mb-2">
+            <div className="text-center mb-2">
               <h2 className="text-xl font-bold">{card.title}</h2>
-            </div> */}
+            </div>
             <img
               src={card.src}
               alt={`Imagen ${card.id}`}
               className="w-full h-auto rounded-md mb-2"
             />
-            {/* <div className="text-center">
+            <div className="text-center">
               <p>{card.text}</p>
-            </div> */}
+            </div>
           </div>
         ))}
       </div>
