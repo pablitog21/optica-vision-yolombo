@@ -5,31 +5,49 @@ export interface ImageData {
   title: string;
 }
 
+export interface AdData {
+  id: number;
+  src: string;
+}
+
 export const imageData: ImageData[] = [
   {
     id: 1,
     src: "assets/images/gafa-1.jpeg",
-    text: "Texto de la prueba",
+    text: "Personalizonalizacion en monturas",
     title: "pruebas dev",
   },
   {
     id: 2,
     src: "assets/images/gafa-2.jpeg",
-    text: "Texto de la prueba",
+    text: "Monturas y accesorios, personaliza tu experiencia",
     title: "pruebas dev",
   },
   {
     id: 3,
     src: "assets/images/gafa-1.jpeg",
-    text: "Texto de la prueba",
+    text: "Personalizonalizacion en monturas",
     title: "pruebas dev",
   },
   {
     id: 4,
-    src: "assets/images/gafa-1.jpeg",
-    text: "Texto de la prueba",
+    src: "assets/images/gafa-2.jpeg",
+    text: "Monturas y accesorios, personaliza tu experiencia",
     title: "pruebas dev",
   },
 
+];
+
+export const adData: AdData[] = [
+  {
+    id: 1,
+    src: "assets/images/publicidad-2.jpeg",
+  },
+  {
+    id: 2,
+    src: "assets/images/publicidad.jpeg"
+  },
 
 ];
+
+
