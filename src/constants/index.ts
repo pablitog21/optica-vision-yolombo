@@ -1,26 +1,35 @@
-
 export interface ImageData {
-    id: number;
-    src: string;
-    text: string;
-  }
-  
-  export const imageData: ImageData[] = [
-    {
-      id: 1,
-      src: "/images/image1.jpg",
-      text: "Texto de la primera imagen",
-    },
-    {
-      id: 2,
-      src: "/images/image2.jpg",
-      text: "Texto de la segunda imagen",
-    },
-    {
-      id: 3,
-      src: "/images/image3.jpg",
-      text: "Texto de la tercera imagen",
-    },
-   
-  ];
-  
+  id: number;
+  src: string;
+  text: string;
+  title: string;
+}
+
+export const imageData: ImageData[] = [
+  {
+    id: 1,
+    src: "assets/images/gafa-1.jpeg",
+    text: "Texto de la prueba",
+    title: "pruebas dev",
+  },
+  {
+    id: 2,
+    src: "assets/images/gafa-2.jpeg",
+    text: "Texto de la prueba",
+    title: "pruebas dev",
+  },
+  {
+    id: 3,
+    src: "assets/images/gafa-1.jpeg",
+    text: "Texto de la prueba",
+    title: "pruebas dev",
+  },
+  {
+    id: 4,
+    src: "assets/images/gafa-1.jpeg",
+    text: "Texto de la prueba",
+    title: "pruebas dev",
+  },
+
+
+];

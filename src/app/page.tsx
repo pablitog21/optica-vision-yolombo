@@ -1,11 +1,10 @@
-import Hero from '@/components/main/Hero'
-import Image from 'next/image'
+import Card  from '@/components/main/Card'
 
 export default function Home() {
   return (
     <main className='h-full w-full'>
       <div className='flex flex-col  gap-20'>
-        <Hero />
+        <Card/>
       </div>
     </main>
   )
