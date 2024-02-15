@@ -10,6 +10,12 @@ export interface AdData {
   src: string;
 }
 
+export interface AdPromo {
+  id: number;
+  src: string;
+}
+
+
 export const imageData: ImageData[] = [
   {
     id: 1,
@@ -49,5 +55,14 @@ export const adData: AdData[] = [
   },
 
 ];
+
+export const adPromo: AdPromo[] = [
+  {
+    id: 1,
+    src: "assets/images/promos.jpg",
+  },
+  
+
+]
 
 
