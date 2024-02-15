@@ -79,7 +79,7 @@ const Card = () => {
           </div>
         </div>
       )}
-    <VideoPage />
+    {/* <VideoPage /> */}
     </div>
   );
 };

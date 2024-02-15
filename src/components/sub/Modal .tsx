@@ -21,12 +21,16 @@ const Modal = () => {
     useEffect(() => {
         if (showModal) {
             document.addEventListener('mousedown', handleOutsideClick);
-        } else {
-            document.removeEventListener('mousedown', handleOutsideClick);
+
+            const timer = setTimeout(() => {
+                setShowModal(false);
+            }, 15000); // Cerrar el modal después de 20 segundos
+
+            return () => {
+                document.removeEventListener('mousedown', handleOutsideClick);
+                clearTimeout(timer); // Limpiar el temporizador si el modal se cierra antes del tiempo establecido
+            };
         }
-        return () => {
-            document.removeEventListener('mousedown', handleOutsideClick);
-        };
     }, [showModal]);
 
     return (
@@ -34,13 +38,13 @@ const Modal = () => {
             {showModal && (
                 <div className="fixed inset-0 flex items-center justify-center">
                     <div className="absolute inset-0 bg-gray-800 opacity-75"></div>
-                    <div className="relative" ref={modalRef} style={{ marginTop: '10vh' }}>
+                    <div className="relative rounded-lg overflow-hidden" ref={modalRef} style={{ marginTop: '10vh', maxWidth: '80vw', borderRadius: '10px' }}>
                         <div className="absolute top-0 right-0 flex items-center justify-center" style={{ marginRight: '0.5rem', marginTop: '0.5rem' }}>
                             <button className="w-8 h-8 text-gray-700 hover:text-gray-900 rounded-full bg-gray-300 flex items-center justify-center" onClick={handleCloseModal}>
                                 <span className="text-lg">X</span>
                             </button>
                         </div>
-                        <img className="object-contain w-auto h-auto max-h-[87vh] max-w-[80vw]" src={promo.src} alt="Promo" />
+                        <img className="object-contain w-auto h-auto max-h-[87vh] max-w-full" src={promo.src} alt="Promo" />
                     </div>
                 </div>
             )}
