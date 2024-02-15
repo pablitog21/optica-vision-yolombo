@@ -1,6 +1,5 @@
 'use client'
 
-import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/main/Navbar'
@@ -10,17 +9,6 @@ import Modal from '@/components/sub/Modal '
 import BotonWhatsapp from '@/components/sub/BotonWhatsapp '
 
 const inter = Inter({ subsets: ['latin'] });
-
-const metadata: Metadata = {
-  title: 'Óptica Visión Yolombó',
-  description: 'Óptica Visión Yolombó',
-  icons: {
-    // icon: ['/favicon.ico?v=4'],
-    apple: ['/vision-logo.ico?v=4'],
-    shortcut: ['/vision-logo.ico']
-  },
-  manifest: '/site.webmanifest'
-};
 
 export default function RootLayout({
   children,
@@ -45,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className}bg-[#030014] overflow-y-scroll overflow-x-hidden`}>
-        <Modal/>
+        <Modal />
         <Navbar />
         {children}
         <BotonWhatsapp />
