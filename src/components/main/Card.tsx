@@ -2,6 +2,7 @@
 
 import { ImageData, imageData, adData, AdData } from '@/constants';
 import React, { useState } from 'react'
+import VideoPage from '../sub/VideoPage ';
 
 const Card = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -78,6 +79,7 @@ const Card = () => {
           </div>
         </div>
       )}
+    {/* <VideoPage /> */}
     </div>
   );
 };
