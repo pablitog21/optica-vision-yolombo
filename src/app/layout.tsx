@@ -1,14 +1,17 @@
+'use client'
+
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/main/Navbar'
 import Footer from '@/components/main/Footer'
-import BotonWhatsapp from '@/components/sub/BotonWhatsapp '
+import { useEffect } from 'react';
 import Modal from '@/components/sub/Modal '
+import BotonWhatsapp from '@/components/sub/BotonWhatsapp '
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] });
 
-export const metadata: Metadata = {
+const metadata: Metadata = {
   title: 'Óptica Visión Yolombó',
   description: 'Óptica Visión Yolombó',
   icons: {
@@ -17,17 +20,32 @@ export const metadata: Metadata = {
     shortcut: ['/vision-logo.ico']
   },
   manifest: '/site.webmanifest'
-}
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
+  useEffect(() => {
+    // Lleva la página al principio cuando se monta
+    window.scrollTo(0, 0);
+
+    // También lleva la página al principio cuando se recarga
+    const handleWindowReload = () => {
+      window.scrollTo(0, 0);
+    };
+    window.addEventListener('beforeunload', handleWindowReload);
+
+    return () => {
+      window.removeEventListener('beforeunload', handleWindowReload);
+    };
+  }, []);
+
   return (
     <html lang="en">
       <body className={`${inter.className}bg-[#030014] overflow-y-scroll overflow-x-hidden`}>
-        <Modal />
+        <Modal/>
         <Navbar />
         {children}
         <BotonWhatsapp />
@@ -36,3 +54,4 @@ export default function RootLayout({
     </html>
   )
 }
+
