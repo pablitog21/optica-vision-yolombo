@@ -32,9 +32,11 @@ const Card = () => {
 
   return (
     <div className="container mx-auto px-4 mt-40 mb-16">
-      <div className="mb-6">
-        <h2>Publicidad</h2>
-      </div>
+      {/* <div className="mb-6">
+        <buttonclassName="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          Abrir Modal
+        </buttonclassName=>
+      </div> */}
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
         {renderAds()}
@@ -79,7 +81,7 @@ const Card = () => {
           </div>
         </div>
       )}
-    {/* <VideoPage /> */}
+      {/* <VideoPage /> */}
     </div>
   );
 };
