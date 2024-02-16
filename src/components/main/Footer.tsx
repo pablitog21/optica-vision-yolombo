@@ -31,7 +31,7 @@ const Footer = () => {
                 <div className="flex flex-col items-center mb-2">
                     <a href="/contactanos">Contáctanos</a>
                     <p className="text-sm">Teléfono: 302 308 6093</p>
-                    <p className="text-sm">Email: example@gmail.com</p>
+                    <p className="text-sm">Email: opticavisionyolombo@gmail.com</p>
                 </div>
                 <div className="flex flex-col items-center mb-2">
                     <a>Ubicación</a>
