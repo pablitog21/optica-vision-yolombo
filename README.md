@@ -8,3 +8,5 @@ npm run dev
 # or
 yarn insrall
 yarn dev
+
+Proyecto personal y a la vez un reto personal
