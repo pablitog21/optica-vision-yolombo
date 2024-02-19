@@ -59,7 +59,7 @@ export const adData: AdData[] = [
 export const adPromo: AdPromo[] = [
   {
     id: 1,
-    src: "assets/images/promos.jpg",
+    src: "assets/images/new-publicidad.jpg",
   },
   
 
