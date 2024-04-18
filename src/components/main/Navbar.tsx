@@ -57,7 +57,7 @@ const Navbar = () => {
                 </div>
                 <div className='hidden md:flex items-center space-x-4 text-black'>
                     <a href="/" className={`text-black hover:text-gray-400 font-semibold transition duration-300 ${selectedOption === 'about' ? 'text-blue-900' : ''}`} onClick={() => handleOptionClick('about')}>Inicio</a>
-                    <a href="/services" className={`text-black hover:text-gray-400 font-semibold transition duration-300 ${selectedOption === 'services' ? 'text-blue-900' : ''}`} onClick={() => handleOptionClick('services')}>Services</a>
+                    <a href="/services" className={`text-black hover:text-gray-400 font-semibold transition duration-300 ${selectedOption === 'services' ? 'text-blue-900' : ''}`} onClick={() => handleOptionClick('services')}>Servicios</a>
                     <a href="#contact" className={`text-black hover:text-gray-400 font-semibold transition duration-300 ${selectedOption === 'contact' ? 'text-blue-900' : ''}`} onClick={() => handleOptionClick('contact')}>Contact</a>
                 </div>
             </div>
@@ -65,7 +65,7 @@ const Navbar = () => {
             {isMobileMenuOpen && (
                 <div className="md:hidden absolute top-[55px] right-0 bg-[#03001417] text-black text-center py-4 mt-2 rounded-md w-40">
                     <a href="/" className={`block py-2 hover:bg-gray-800 ${selectedOption === 'about' ? 'bg-blue-900' : ''}`} onClick={() => handleOptionClick('about')}>Inicio</a>
-                    <a href="/services" className={`block py-2 hover:bg-gray-800 ${selectedOption === 'services' ? 'bg-blue-900' : ''}`} onClick={() => handleOptionClick('services')}>Services</a>
+                    <a href="/services" className={`block py-2 hover:bg-gray-800 ${selectedOption === 'services' ? 'bg-blue-900' : ''}`} onClick={() => handleOptionClick('services')}>Servicios</a>
                     <a href="#contact" className={`block py-2 hover:bg-gray-800 ${selectedOption === 'contact' ? 'bg-blue-900' : ''}`} onClick={() => handleOptionClick('contact')}>Contact</a>
                 </div>
             )}

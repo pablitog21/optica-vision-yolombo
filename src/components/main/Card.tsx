@@ -3,6 +3,7 @@
 import { ImageData, imageData, adData, AdData } from '@/constants';
 import React, { useState } from 'react'
 import VideoPage from '../sub/VideoPage ';
+import Modal from '../sub/Modal ';
 
 const Card = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -32,6 +33,7 @@ const Card = () => {
 
   return (
     <div className="container mx-auto px-4 mt-40 mb-16">
+      <Modal />
       {/* <div className="mb-6">
         <buttonclassName="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
           Abrir Modal
@@ -50,7 +52,7 @@ const Card = () => {
         {imageData.map((card: ImageData) => (
           <div
             key={card.id}
-            className="border border-gray-300 p-4 rounded-lg bg-gray-100 hover:transform hover:scale-105 cursor-pointer rounded-md"
+            className="border border-gray-300 p-4  bg-gray-100 hover:transform hover:scale-105 cursor-pointer rounded-md"
             onClick={() => openImage(card.src)}
           >
             <img

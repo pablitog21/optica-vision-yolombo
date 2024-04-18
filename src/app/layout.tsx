@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className}bg-[#030014] overflow-y-scroll overflow-x-hidden`}>
-        <Modal />
+        
         <Navbar />
         {children}
         <BotonWhatsapp />

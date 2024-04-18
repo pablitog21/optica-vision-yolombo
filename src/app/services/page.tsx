@@ -5,15 +5,9 @@ import Head from 'next/head';
 // Define la función ServicePage
 export default function ServicePage() {
   return (
-    <div>
-      <Head>
-        <title>Nuestros Servicios</title>
-        <meta name="description" content="Ofrecemos una variedad de servicios para satisfacer tus necesidades." />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
+    <div className="container mx-auto px-4 mt-40 mb-16">
       {/* Encabezado */}
-      <header className="bg-gray-800 text-white py-4 px-8">
+      <header className="bg-gray-800 text-white py-4 px-8 rounded-lg">
         <h1 className="text-3xl font-bold">Nuestros Servicios</h1>
       </header>
 
