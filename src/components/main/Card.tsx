@@ -44,8 +44,8 @@ const Card = () => {
         {renderAds()}
       </div>
 
-      <div className="mb-6 mt-12">
-        <h2>Productos</h2>
+      <div className="mb-6 mt-12 text-center">
+        <h2> Algunos de nuestros productos</h2>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -60,9 +60,6 @@ const Card = () => {
               alt={`Imagen ${card.id}`}
               className="w-full h-auto rounded-md"
             />
-            <div className="text-center">
-              <p>{card.text}</p>
-            </div>
           </div>
         ))}
       </div>

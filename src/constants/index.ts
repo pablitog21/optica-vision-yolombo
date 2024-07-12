@@ -1,8 +1,6 @@
 export interface ImageData {
   id: number;
   src: string;
-  text: string;
-  title: string;
 }
 
 export interface AdData {
@@ -19,29 +17,28 @@ export interface AdPromo {
 export const imageData: ImageData[] = [
   {
     id: 1,
-    src: "assets/images/gafa-1.jpeg",
-    text: "Personalizonalizacion en monturas",
-    title: "pruebas dev",
+    src: "assets/gafas/1.jpg",
   },
   {
     id: 2,
-    src: "assets/images/gafa-2.jpeg",
-    text: "Monturas y accesorios, personaliza tu experiencia",
-    title: "pruebas dev",
+    src: "assets/gafas/2.jpg",
   },
   {
     id: 3,
-    src: "assets/images/gafa-1.jpeg",
-    text: "Personalizonalizacion en monturas",
-    title: "pruebas dev",
+    src: "assets/gafas/3.jpg",
   },
   {
     id: 4,
-    src: "assets/images/gafa-2.jpeg",
-    text: "Monturas y accesorios, personaliza tu experiencia",
-    title: "pruebas dev",
+    src: "assets/gafas/5.jpg",
   },
-
+  {
+    id: 5,
+    src: "assets/gafas/1.jpg",
+  },
+  {
+    id: 6,
+    src: "assets/gafas/1.jpg",
+  }
 ];
 
 export const adData: AdData[] = [
